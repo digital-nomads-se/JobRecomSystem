@@ -10,7 +10,7 @@ app = Flask(__name__)
 with open('models/model.pkl', 'rb') as file:
     model, mlb = pickle.load(file)
 
-UPLOAD_FOLDER = 'uploads'
+UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'pdf'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
