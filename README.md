@@ -32,5 +32,43 @@ The project utilizes the following dataset for building the job recommendation m
 
 [📔 View the Dataset](https://www.kaggle.com/datasets/rajatraj0502/linkedin-job-2023)
 
+## Prerequisites
+Before proceeding with the installation, ensure you have the following installed on your system:
+- Git
+- Python 3
+- pip (Python package manager)
 
+## Installation Steps
 
+### 1. Clone the Repository
+Clone the Job Recommendation System repository from GitHub:
+```bash
+git clone https://github.com/digital-nomads-se/JobRecomSystem/
+```
+
+### 2. Create and Activate a Python Virtual Environment
+```
+cd JobRecomSystem
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+### 3. Navigate to the Flask Application Directory
+```
+cd Flask-App
+```
+
+### 4. Install Required Dependencies
+```
+pip install -r requirements.txt
+```
+
+### 5. Run the Flask Application
+```
+python app.py
+```
+
+### 6. Accessing the Application
+```
+http://127.0.0.1:5000/
+```
