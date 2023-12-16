@@ -12,13 +12,13 @@ Find the detailed project report here, encompassing all aspects of our data scie
 
 Dive into our comprehensive presentation, which provides an overview of the project, insights into our methodology, and key findings.
 
-[🔗 Access the Presentation](https://docs.google.com/presentation/d/1PIjUTZotAmdnxzVK7-4XxU6356nvVu94_IneKnZP5_g/edit?usp=sharing)
+[🔗 Access the Presentation](https://www.slideshare.net/ChaitanyaGawande5/cmpe255-job-recommendation-systempptx)
 
 ## Presentation Demo 📺
 
 Watch a demo of our presentation to see the job recommendation system in action and understand the impact it can create.
 
-[🎬 Watch the Presentation Demo](#link-to-presentation-demo)
+[🎬 Watch the Presentation Demo](https://youtu.be/d_kcl4DVnwc)
 
 ## Colab Notebook Link 💻
 
@@ -31,4 +31,6 @@ Explore our interactive Colab notebook, which includes the implementation of our
 The project utilizes the following dataset for building the job recommendation model: LinkedIn Job Postings Dataset
 
 [📔 View the Dataset](https://www.kaggle.com/datasets/rajatraj0502/linkedin-job-2023)
+
+
 
