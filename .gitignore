@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Instance folder
+instance/
+
+# Log files
+*.log
+
+# If using SQLite, uncomment the next line
+#*.db
+
+# Dependency files
+Pipfile.lock
+poetry.lock
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/

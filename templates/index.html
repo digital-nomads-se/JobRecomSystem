@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Recommendation System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Upload Your Resume</h1>
+
+    <!-- Display message from the Flask app -->
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <!-- File upload form -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf">
+        <input type="submit" value="Upload">
+    </form>
+
+    <!-- Display recommended jobs if available -->
+    {% if recommended_job %}
+        <h2>Recommended Job:</h2>
+        <p>{{ recommended_job }}</p>
+    {% endif %}
+</body>
+</html>
