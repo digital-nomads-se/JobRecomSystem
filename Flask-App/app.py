@@ -3,7 +3,6 @@ from flask import Flask, request, render_template, redirect, url_for
 from werkzeug.utils import secure_filename
 from pdfminer.high_level import extract_text
 import pickle
-import data_preprocessing as dp
 
 app = Flask(__name__)
 
@@ -18,6 +17,17 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # Ensure UPLOAD_FOLDER exists
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
+
+def extract_skills(text):
+    skills = []
+    for line in text.split('\n'):
+      if 'SKILLS :' in line:
+        skills.extend([skill.strip() for skill in line.split(':')[1].split(',') if skill.strip()])
+    return list(set(skills))
+
+def transform_skills(skills, mlb):
+    known_skills = set(skills).intersection(set(mlb.classes_))
+    return mlb.transform([list(known_skills)])
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -38,8 +48,8 @@ def upload():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
         text = extract_text(file_path)
-        skills = dp.extract_skills(text)
-        skills_array = dp.transform_skills(skills, mlb)
+        skills = extract_skills(text)
+        skills_array = transform_skills(skills, mlb)
         recommended_job = model.predict(skills_array)
         print(recommended_job)
         # Perform any additional processing and return the result
