@@ -4,7 +4,7 @@ This project focuses on developing a robust job recommendation system using adva
 
 | Section                | Description |
 | ---------------------- | ----------- |
-| **Project Report 📄**  | Find the detailed project report here, encompassing all aspects of our data science journey - from data collection and preprocessing to model building, tuning, and evaluation.<br>[📋 Read the Full Report](#link-to-full-report) |
+| **Project Report 📄**  | Find the detailed project report here, encompassing all aspects of our data science journey - from data collection and preprocessing to model building, tuning, and evaluation.<br>[📋 Read the Full Report](https://github.com/digital-nomads-se/JobRecomSystem/blob/main/DM_REPORT.pdf) |
 | **Presentation Link 🎥** | Dive into our comprehensive presentation, which provides an overview of the project, insights into our methodology, and key findings.<br>[🔗 Access the Presentation](https://www.slideshare.net/ChaitanyaGawande5/cmpe255-job-recommendation-systempptx) |
 | **Presentation Demo 📺** | Watch a demo of our presentation to see the job recommendation system in action and understand the impact it can create.<br>[🎬 Watch the Presentation Demo](https://youtu.be/d_kcl4DVnwc) |
 | **Colab Notebook Link 💻** | Explore our interactive Colab notebook, which includes the implementation of our job recommendation system.<br>[📔 View the Colab Notebook](https://colab.research.google.com/drive/1afXZjkpA57AQa00aNbjl4EdikhmMjcKb?usp=sharing) |
